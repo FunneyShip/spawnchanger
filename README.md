@@ -1,0 +1,4 @@
+spawnchanger
+============
+
+changes spawn point
