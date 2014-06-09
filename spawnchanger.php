@@ -40,10 +40,10 @@ class Spawn implements Plugin{
 }
 public function Command($cmd, $issuer, $alias){
 
- $this->api->console->run(tp . $issuer . $x . $y . $z); //mcpe-gamer it is some thing wrong with this line see if you can fix it
+ $this->api->console->run(tp . $issuer . $x . $y . $z);
  
  }
- //i know the solution but this is a test
+
 public function __destruct(){
 }
 }
