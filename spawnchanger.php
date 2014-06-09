@@ -32,15 +32,15 @@ class Spawn implements Plugin{
 		$this->api->addHandler("player.respawn", array($this, "handle"));
 		$this->api->console->register("spawn", "change's spawn", array($this, "Command"));
 		$this->api->console->alias("s","spawn");
-		console("[INFO][SpawnChange] SpawnChange Enabled!');
-    define("x", $this->config->get('x'));
-		define("y", $this->config->get('y'));
-    define("z", $this->config->get('z'));
-
+		console("[INFO][SpawnChange] SpawnChange Enabled!");
+                
+                $x = ($this->CONFIG["x"]);
+                $y = ($this->CONFIG["y"]);
+                $z = ($this->CONFIG["z"]);
 }
 public function Command($cmd, $issuer, $alias){
 
- $this->api->console->run(tp $x $y $z); //mcpe-gamer it is some thing wrong with this line see if you can fix it
+ $this->api->console->run(tp . $issuer . $x . $y . $z); //mcpe-gamer it is some thing wrong with this line see if you can fix it
  
  }
  //i know the solution but this is a test
